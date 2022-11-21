@@ -1,7 +1,4 @@
 package model;
-
-
-
 public abstract class Trabajador {
 	private String nombre;
 	private String rut;
@@ -55,8 +52,12 @@ public abstract class Trabajador {
 	}
 
 	public Trabajador(String nombre, String rut, String estadoCivil, String tituloP, String horario, String direccion) {
-		throw new UnsupportedOperationException();
+		this.nombre = nombre;
+		this.rut = rut;
+		this.estadoCivil = estadoCivil;
+		this.tituloP = tituloP;
+		this.horario = horario;
+		this.direccion = direccion;
 	}
-
 	public abstract String getTipo();
 }

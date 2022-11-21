@@ -1,18 +1,22 @@
 package model;
 
 import java.util.ArrayList;
-import model.Departamento;
 
 public class Facultad {
-	private String nombre;
-	private String ubicacion;
-	private ArrayList<Departamento> departamentos = new ArrayList<Departamento>();
-
+	private final String nombre;
+	private final String ubicacion;
+	private final ArrayList<Departamento> departamentos = new ArrayList<>();
 	public String getNombre() {
 		return this.nombre;
 	}
-
 	public String getUbicacion() {
 		return this.ubicacion;
+	}
+	public Facultad(String nombre, String ubicacion){
+		this.nombre = nombre;
+		this.ubicacion = ubicacion;
+	}
+	public ArrayList<Departamento> getDepartamentos() {
+		return departamentos;
 	}
 }
